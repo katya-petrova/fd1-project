@@ -124,13 +124,13 @@ const mapImg = document.querySelector(".map-image");
 const enableDarkMode = () => {
   document.body.classList.add('dark-mode');
     localStorage.setItem('darkMode', 'enabled')
-    mapImg.data = "../assets/images/map-dark.svg";
+    mapImg.data = "./assets/images/map-dark.svg";
     darkModeToggle.checked = true; 
 };
 
 const disableDarkMode = () => {
   document.body.classList.remove('dark-mode');
- mapImg.data = "../assets/images/map.svg";
+ mapImg.data = "./assets/images/map.svg";
     localStorage.setItem('darkMode', null);
 };
 
