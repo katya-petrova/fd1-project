@@ -173,7 +173,7 @@ body {
 }
 
 .watch-your-favorite-animal {
-  background: url(../assets/images/main-background.png) no-repeat;
+  background: url(./assets/images/main-background.png) no-repeat;
   background-position: center;
   width: 100%;
   background-size: cover;
@@ -271,7 +271,7 @@ body {
 
 .slider-wrapper {
   position: relative;
-  background: url(../assets/images/line.png) no-repeat 100% 38%;
+  background: url(./assets/images/line.png) no-repeat 100% 38%;
   width: 1087px;
   float: right;
   height: 500px;
@@ -839,7 +839,7 @@ body {
   position: relative;
   width: 67px;
   height: 97px;
-  background: url(../assets/images/mark.svg) no-repeat;
+  background: url(./assets/images/mark.svg) no-repeat;
   z-index: 1;
   overflow: hidden;
 }
@@ -884,7 +884,7 @@ body {
 }
 
 .eagle-photo {
-  background: url(../assets/images/eagle.png) 94px 266px;
+  background: url(./assets/images/eagle.png) 94px 266px;
   background-size: contain;
   border-radius: 50%;
   height: 43px;
@@ -908,7 +908,7 @@ body {
 }
 
 .alligator-photo {
-  background: url(../assets/images/crocodile.png) 125px 294px;
+  background: url(./assets/images/crocodile.png) 125px 294px;
   background-size: 42px;
   border-radius: 50%;
   height: 43px;
@@ -932,7 +932,7 @@ body {
 }
 
 .gorilla-photo {
-  background: url(../assets/images/gorilla.png) 127px 299px;
+  background: url(./assets/images/gorilla.png) 127px 299px;
   background-size: 42px;
   border-radius: 50%;
   height: 43px;
@@ -956,7 +956,7 @@ body {
 }
 
 .panda-photo {
-  background: url(../assets/images/panda.png) 105px 251px;
+  background: url(./assets/images/panda.png) 105px 251px;
   background-size: 35px;
   border-radius: 50%;
   height: 43px;
@@ -1018,23 +1018,23 @@ body {
 }
 
 .eagle-prof {
-  background: url(../assets/images/eagle-round.png);
+  background: url(./assets/images/eagle-round.png);
 }
 
 .alligator-prof {
-  background: url(../assets/images/crocodile.png) 231px;
+  background: url(./assets/images/crocodile.png) 231px;
   background-size: 57px;
   border-radius: 50%;
 }
 
 .gorilla-prof {
-  background: url(../assets/images/gorilla.png) 231px;
+  background: url(./assets/images/gorilla.png) 231px;
   background-size: 57px;
   border-radius: 50%;
 }
 
 .panda-prof {
-  background: url(../assets/images/panda.png) 231px;
+  background: url(./assets/images/panda.png) 231px;
   background-size: 57px;
   border-radius: 50%;
 }
@@ -1235,7 +1235,7 @@ button[type="submit"] {
 }
 
 .submit-arrow {
-  background: url(../assets/images/submit-arrow.svg) no-repeat;
+  background: url(./assets/images/submit-arrow.svg) no-repeat;
   height: 10px;
   width: 50px;
   cursor: pointer;
@@ -1355,7 +1355,7 @@ address a {
 
   .slider-wrapper {
     position: relative;
-    background: url(../assets/images/line.svg) no-repeat;
+    background: url(./assets/images/line.svg) no-repeat;
     width: 822px;
     background-position-y: center;
     float: right;
@@ -1403,7 +1403,7 @@ address a {
 
   .slider-wrapper {
     position: relative;
-    background: url(../assets/images/line.svg) no-repeat;
+    background: url(./assets/images/line.svg) no-repeat;
     width: 720px;
     background-position-y: center;
     height: 500px;
