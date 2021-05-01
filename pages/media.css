@@ -1,0 +1,1289 @@
+body {
+  --text-color: #4F4F4F;
+  --white: #fff;
+}
+
+.dark-mode {
+  --header-color: #FEFEFE; 
+  --white: #333333;
+}
+
+
+@media all and (max-width: 1600px) {
+  .wrapper-large {
+    max-width: 1300px;
+  }
+
+  .favorite-animal-header {
+    margin-left: 0;
+  }
+
+  .eagle-popup {
+    top: -49px;
+    left: 27px;
+  }
+
+  .footer-button {
+    margin-left: 50px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .wrapper-large {
+    max-width: 1010px;
+  }
+
+  .favorite-animal-header {
+    margin-top: 53px;
+  }
+
+  .slider {
+    right: -296px;
+    top: 62px;
+    width: 1077px;
+  }
+
+  .small {
+    margin-top: -3px;
+  }
+
+  .slider-item.small img {
+    width: 180px;
+    height: 260px;
+  }
+
+  .small:hover {
+    transform: none;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    background: url(../online-zoo/assets/images/line.svg) no-repeat;
+    width: 930px;
+    background-position-y: center;
+    float: right;
+    height: 500px;
+    margin-top: -58px;
+    overflow: hidden;
+  }
+
+  .watch-your-favorite-range {
+    bottom: 9px;
+    left: 17px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .wrapper-large {
+    max-width: 900px;
+  }
+
+  .wrapper-medium {
+    max-width: 900px;
+  }
+
+  .watch-your-favorite-animal {
+    height: 926px;
+  }
+
+  .social-networks {
+    bottom: -429px;
+  }
+
+  .slider {
+    right: -494px;
+    top: 62px;
+    width: 1077px;
+  }
+
+  .slider-item.small img {
+    width: 180px;
+    height: 260px;
+  }
+
+  .small:hover {
+    transform: none;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    background: url(../online-zoo/assets/images/line.svg) no-repeat;
+    width: 720px;
+    background-position-y: center;
+    height: 500px;
+    margin-top: -58px;
+  }
+
+  .watch-your-favorite-range {
+    bottom: 9px;
+    left: 113px;
+  }
+
+  .wrapper-small {
+    max-width: 739px;
+    margin: 0px auto;
+  }
+
+  .how-it-works-slider-img {
+    width: 100%;
+    height: 323px;
+    margin-top: -17px;
+    margin-bottom: 19px;
+    border-radius: 5px;
+  }
+
+  .how-it-works-button {
+    margin-top: 29px;
+    margin-left: 7px;
+  }
+
+  .what-inspires-us-items {
+    width: 286px;
+    margin-right: -17px;
+  }
+
+  .columns {
+    margin-left: 0px;
+    margin-right: 18px;
+    padding-bottom: 102px;
+  }
+
+  .pets-in-zoo-slider {
+    max-width: 975px;
+    margin-top: -6px;
+    margin-bottom: 25px;
+  }
+
+  .pets-in-zoo-slider .arrow {
+    margin: 10px auto auto 0px;
+  }
+
+  .pets-in-zoo .hello-animal {
+    left: 7px;
+  }
+
+  .pets-in-zoo-animal img {
+    width: 210px;
+  }
+
+  .scheme-wrapper {
+    max-width: 904px;
+    margin-top: 48px;
+  }
+
+  .scheme-text {
+    width: 131px;
+    margin-left: 23px;
+  }
+
+  .pay-and-feed .pay-and-feed-button {
+    margin-top: -10px;
+  }
+
+  .feedback {
+    max-width: 440px;
+    height: 310px;
+  }
+
+  .feedback-slider-wrapper {
+    margin-top: 64px;
+    margin-bottom: 47px;
+    max-width: 988px;
+  }
+
+  .feedback-content {
+    max-width: 322px;
+  }
+
+  .map-image {
+    width: 100%;
+    height: 436px;
+    transform: scaleY(1.15);
+  }
+
+  .eagle-pin {
+    top: 12%;
+    left: 9%;
+  }
+
+  .alligator-pin {
+    top: 15%;
+    left: 19.5%;
+  }
+
+  .gorilla-pin {
+    top: 26%;
+    left: 46%;
+  }
+
+  .panda-pin {
+    top: 14%;
+    left: 72%;
+  }
+
+  .alligator-popup {
+    top: -50px;
+    left: 27px;
+  }
+
+  .footer-menu {
+    max-width: 378px;
+    margin-right: 61px;
+  }
+
+  .contact-us {
+    max-width: 459px;
+    margin-top: -7px;
+    margin-bottom: 10px;
+  }
+
+  .contact-us-send {
+    margin-right: 1px;
+    margin-top: -2px;
+  }
+
+  .contact-inf {
+    margin-top: -15px;
+  }
+
+  .footer-button {
+    margin-left: 50px;
+    position: absolute;
+    top: 423px;
+    left: 409px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .wrapper-large {
+    max-width: 800px;
+  }
+
+  .wrapper-medium {
+    max-width: 800px;
+  }
+
+  .feedback-slider-wrapper {
+    max-width: 536px;
+  }
+
+  .feedback1 {
+    display: none;
+  }
+}
+
+@media all and (max-width: 860px) {
+  .header-menu ul {
+    justify-content: space-around;
+  }
+
+  .wrapper-large {
+    max-width: 750px;
+  }
+
+  .wrapper-medium {
+    max-width: 750px;
+  }
+
+  .favorite-animal-header h2 {
+    font-size: 64px;
+    max-width: 590px;
+  }
+
+  .slider-wrapper {
+    width: 620px;
+  }
+
+  .slider {
+    right: -550px;
+  }
+
+  .hello-small-animal {
+    width: 147px;
+    left: 24px;
+  }
+
+  .scheme-wrapper {
+    flex-direction: column;
+  }
+
+  .arrow-line {
+    transform: rotate(90deg);
+  }
+
+  .arrow-line {
+    max-width: 35px;
+    margin: 47px;
+  }
+
+  .pets-in-zoo {
+    overflow: hidden;
+  }
+
+  .pets-in-zoo-slider {
+    width: 885px;
+  }
+
+  .pets-in-zoo-slider .arrow {
+    display: none;
+  }
+
+  .map-image {
+    margin-top: -40px;
+  }
+
+  .eagle-pin {
+    top: 10%;
+    left: 9%;
+  }
+
+  .alligator-pin {
+    top: 13%;
+    left: 19%;
+  }
+
+  .gorilla-pin {
+    top: 27%;
+    left: 46.1%;
+  }
+
+  .panda-pin {
+    top: 10%;
+    left: 72%;
+  }
+}
+
+@media all and (max-width: 860px) {
+  .footer-menu ul {
+    display: block;
+  }
+
+  .footer-menu li {
+    margin-top: 4px;
+  }
+
+  footer {
+    height: 1068px;
+  }
+
+  .footer-menu-wrapper {
+    display: grid;
+    grid-template-columns: 80px;
+    /* grid-template-rows: 30px 20px; */
+    grid-template-areas:
+      "logo button"
+      "menu . ";
+  }
+
+  .footer-logo {
+    grid-area: logo;
+  }
+
+  .footer-menu {
+    grid-area: menu;
+    max-width: 200px;
+    margin-right: 0;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    margin-top: 69px;
+  }
+
+  .contact-us h3 {
+    margin-bottom: 15px;
+  }
+
+  .contact-inf {
+    margin-top: 50px;
+    margin-bottom: 13px;
+    width: 195px;
+  }
+
+  .footer-button {
+    position: static;
+    margin-left: 0;
+    grid-area: button;
+  }
+}
+
+@media all and (max-width: 770px) {
+  .wrapper-large {
+    max-width: 670px;
+  }
+
+  .wrapper-medium {
+    max-width: 670px;
+  }
+
+  .wrapper-small {
+    max-width: 690px;
+  }
+
+  .slider {
+    right: -560px;
+  }
+
+  .slider-wrapper {
+    width: 588px;
+  }
+
+  .alligator-pin {
+    top: 13%;
+    left: 18.1%;
+  }
+
+  .footer-button {
+    left: 334px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .wrapper-large {
+    max-width: 680px;
+  }
+
+  .wrapper-medium {
+    max-width: 680px;
+  }
+
+  .menu-burger {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 21px;
+    cursor: pointer;
+    order: 5;
+    margin-top: 4px;
+  }
+
+  .menu-burger.menu-active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .menu-burger.menu-active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .menu-burger.menu-active::after {
+    bottom: 45%;
+    transform: rotate(45deg) translate(0px, 50%);
+    width: 100%;
+  }
+
+  .menu-burger span,
+  .menu-burger::before,
+  .menu-burger::after {
+    right: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background: var(--text-color);
+  }
+
+  .menu-burger::before,
+  .menu-burger::after {
+    content: "";
+  }
+
+  .menu-burger::before {
+    top: 0;
+  }
+
+  .menu-burger::after {
+    bottom: 0;
+    width: 33px;
+  }
+
+  .menu-burger span {
+    top: 46%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .header .wrapper-large {
+    max-width: 740px;
+  }
+
+  .header-menu {
+    position: absolute;
+    top: auto;
+    left: -100%;
+    right: auto;
+    width: 100%;
+    height: 230px;
+    background-color: var(--white);
+    padding-top: 100px;
+    transition: left 0.3s ease;
+    z-index: 1;
+  }
+
+  .header-menu.menu-active {
+    left: 0;
+    -webkit-box-shadow: -9px 11px 20px 0px rgba(34, 60, 80, 0.38);
+    -moz-box-shadow: -9px 11px 20px 0px rgba(34, 60, 80, 0.38);
+    box-shadow: -9px 11px 20px 0px rgba(34, 60, 80, 0.38);
+  }
+
+  .header-menu ul {
+    flex-direction: column;
+    width: 95%;
+    margin-left: 15px;
+  }
+
+  .header-menu li {
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+    z-index: 5;
+  }
+
+  .header-content-wrapper {
+    display: flex;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  .logo {
+    order: 1;
+    flex-grow: 4;
+    z-index: 5;
+  }
+
+  .theme-switcher {
+    order: 2;
+    flex-grow: 1;
+    z-index: 5;
+    margin-right: -9px;
+  }
+
+  .toggle-control .control {
+    top: unset;
+    right: unset;
+    z-index: 1;
+  }
+
+  .footer-wrapper {
+    margin: 0 auto;
+    padding: 0.1rem 1rem 3rem;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .wrapper-large {
+    max-width: 600px;
+  }
+
+  .wrapper-medium {
+    max-width: 600px;
+  }
+
+  .wrapper-small {
+    max-width: 600px;
+  }
+
+  .header {
+    position: fixed;
+    background-color: var(--white);
+    z-index: 10;
+  }
+
+  .watch-your-favorite-animal {
+    height: 1027px;
+  }
+
+  .favorite-animal-header {
+    margin-top: 143px;
+  }
+
+  .favorite-animal-header h2 {
+    line-height: 75px;
+    margin-top: 68px;
+    margin-bottom: 31px;
+  }
+
+  .social-networks {
+    bottom: -478px;
+  }
+
+  .slider-wrapper {
+    margin-top: -11px;
+  }
+
+  .how-it-works-slider-img {
+    margin-top: 0px;
+  }
+
+  .how-it-works-button {
+    margin-left: 1px;
+  }
+
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .what-inspires-us {
+    height: 875px;
+  }
+
+  .what-inspires-us-items {
+    margin-bottom: -64px;
+  }
+
+  .pets-in-zoo-slider {
+    width: 938px;
+  }
+
+  .pets-in-zoo {
+    max-width: 619px;
+    margin-top: 0px;
+  }
+
+  .pets-in-zoo h2 {
+    margin-left: 20px;
+    margin-bottom: 43px;
+  }
+
+  .pets-in-zoo-range {
+    margin-left: 15px;
+  }
+
+  .choose-your-favorite-button {
+    margin-top: 36px;
+    margin-left: 16px;
+  }
+
+  .pay-and-feed .simple-text {
+    max-width: 541px;
+    margin-left: 28px;
+    margin-top: -12px;
+  }
+
+  .feedback-slider-wrapper {
+    max-width: 600px;
+    margin-top: 47px;
+  }
+
+  .scheme-text {
+    margin-top: 45px;
+  }
+
+  .feedback-slider-item .arrow {
+    display: none;
+  }
+
+  .feedback {
+    max-width: 583px;
+  }
+
+  .feedback-content {
+    max-width: 441px;
+  }
+
+  .map {
+    min-height: 490px;
+  }
+
+  .map-area {
+    margin-top: -42px;
+    margin-bottom: -73px;
+  }
+
+  .eagle-pin {
+    top: 8%;
+    left: 9%;
+  }
+
+  .alligator-pin {
+    top: 10%;
+    left: 17.5%;
+  }
+
+  .gorilla-pin {
+    left: 45.1%;
+    top: 21%;
+  }
+
+  .panda-pin {
+    top: 9%;
+    left: 71%;
+  }
+
+  .footer-wrapper {
+    padding: 0.1rem 0.05rem 3rem;
+}
+
+  .watch-online-button-wrapper {
+    padding-bottom: 104px;
+  }
+
+  .footer-button {
+    margin-top: -4px;
+  }
+}
+
+@media all and (max-width: 610px) {
+  .wrapper-large {
+    max-width: 550px;
+  }
+
+  .wrapper-medium {
+    max-width: 550px;
+  }
+
+  .wrapper-small {
+    max-width: 550px;
+  }
+
+  .favorite-animal-header,
+  .social-networks {
+    margin-left: 10px;
+  }
+
+  .slider-item.small img {
+    width: 113px;
+    height: 164px;
+  }
+
+  .slider-wrapper {
+    height: 475px;
+    width: 405px;
+  }
+
+  .chosen img {
+    width: 140px;
+    height: 202px;
+  }
+
+  .slider-item.panda.chosen {
+    height: auto;
+  }
+
+  .slider {
+    right: -284px;
+    top: 134px;
+    width: 638px;
+  }
+
+  .hello-small-animal {
+    width: 105px;
+    left: 6px;
+  }
+
+  .hello-animal {
+    width: 120px;
+    bottom: 9px;
+    left: 16px;
+    font-size: 12px;
+  }
+
+  .watch-your-favorite-range {
+    bottom: 85px;
+    left: 42px;
+  }
+
+  .watch-your-favorite-range p {
+    margin-bottom: -7px;
+  }
+
+  .watch-your-favorite-range .range {
+    width: 140px;
+  }
+
+  .watch-your-favorite-range .range::-webkit-slider-thumb {
+    width: 20px;
+    height: 10px;
+  }
+
+  .donate-button {
+    margin-left: 0px;
+  }
+
+  .footer-wrapper {
+    padding: 0.1rem 1rem 3rem;
+  }
+
+  .name,
+  .email {
+    width: 99%;
+  }
+
+  fieldset {
+    width: 94%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .contact-us-send {
+    width: 100%;
+  }
+
+  .footer-info {
+    width: 100%;
+  }
+
+  .contact-us {
+    max-width: 100%;
+  }
+}
+@media all and (max-width: 550px) {
+  .theme-switcher {
+    order: 2;
+    flex-grow: 1;
+    z-index: 5;
+    margin-right: 30px;
+  }
+
+  .eagle-pin {
+    top: 17%;
+    left: 7%;
+  }
+
+  .alligator-pin {
+    top: 20%;
+    left: 15.5%;
+  }
+
+  .gorilla-pin {
+    left: 43.1%;
+    top: 27%;
+  }
+
+  .panda-pin {
+    top: 18%;
+    left: 69%;
+  }
+
+  .footer-button.mobile {
+    display: block;
+  }
+
+  .footer-menu-wrapper .footer-button {
+    display: none;
+  }
+
+  footer {
+    height: 1103px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .feedback {
+    max-width: 300px;
+    height: 363px;
+  }
+
+  footer {
+    height: 1103px;
+  }
+/* 
+  .contact-us {
+    max-width: 300px;
+  } */
+
+  .feedback-content {
+    max-width: 272px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .watch-your-favorite-animal {
+    height: 880px;
+  }
+
+  .favorite-animal-header h2 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 42px;
+    margin-bottom: 15px;
+  }
+
+  .watch-your-favorite-animal .social-networks {
+    display: none;
+  }
+
+  .slider-wrapper {
+    height: 300px;
+    width: 388px;
+  }
+
+  .slider {
+    right: -291px;
+    top: 48px;
+  }
+
+  .watch-your-favorite-range {
+    bottom: -1px;
+    left: 42px;
+  }
+
+  .watch-your-favorite-animal {
+    height: 761px;
+  }
+
+  .how-it-works-wrapper {
+    margin: 0 auto;
+    padding: 0.1rem 2rem 3rem;
+  }
+
+  .how-it-works {
+    height: auto;
+  }
+
+  .contact-us {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .how-it-works-wrapper {
+    padding: 0rem 0.5rem 0rem;
+  }
+
+  .slider-wrapper {
+    height: 297px;
+    width: 318px;
+  }
+
+  .slider {
+    right: -340px;
+    top: 43px;
+  }
+
+  .watch-your-favorite-range {
+    bottom: -1px;
+    left: 58px;
+  }
+
+  .how-it-works-button {
+    margin: 8px auto 50px 11px;
+  }
+
+  .how-it-works-slider .rangecontainer {
+    margin: -9px auto 17px 4px;
+  }
+
+  .how-it-works-slider .range::-webkit-slider-thumb {
+    width: 75px;
+    height: 10px;
+  }
+
+  .what-inspires-us {
+    height: 720px;
+  }
+
+  .what-inspires-us-items {
+    padding-top: 50px;
+    margin-bottom: -34px;
+  }
+
+  .what-inspires-us-items p {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+
+  .map {
+    min-height: 300px;
+  }
+
+  .map-image {
+    height: 314px;
+  }
+
+  .eagle-pin {
+    top: 9%;
+    left: 5%;
+  }
+
+  .alligator-pin {
+    top: 12%;
+    left: 13.5%;
+  }
+
+  .gorilla-pin {
+    left: 41.1%;
+    top: 19%;
+  }
+
+  .panda-pin {
+    top: 10%;
+    left: 67%;
+  }
+
+  .footer-wrapper {
+    padding: 0.1rem 1rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+
+  .wrapper-medium {
+    max-width: 280px;
+}
+
+  .header-menu ul {
+    width: 90%;
+  }
+
+  .logo {
+    margin-top: -5px;
+  }
+
+  .theme-switcher {
+    order: 2;
+    flex-grow: 1;
+    z-index: 5;
+    margin-right: 52px;
+    margin-top: -4px;
+  }
+
+  .header-content-wrapper {
+    display: flex;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
+  .hello-animal {
+    bottom: 8px;
+    left: 7px;
+  }
+
+  .pets-in-zoo h2 {
+    margin: 99px 0px 36px 10px !important;
+  }
+
+  .pets-in-zoo-slider {
+    width: 902px;
+  }
+
+  .pets-in-zoo {
+    max-width: 308px;
+  }
+
+  .choose-your-favorite-button {
+    margin-top: 23px;
+    margin-left: 16px;
+  }
+
+  .pets-in-zoo-range {
+    margin-left: 6px;
+  }
+
+  .pay-and-feed .simple-text {
+    display: none;
+  }
+
+  .pay-and-feed .section-header {
+    padding-top: 50px;
+    margin-bottom: -18px;
+  }
+
+  .pay-and-feed .pay-and-feed-button {
+    margin-top: -19px;
+    padding-bottom: 50px;
+  }
+
+  .feedback1 {
+    display: block;
+  }
+
+  .feedback2 {
+    display: none;
+  }
+
+  .feedback-slider-wrapper {
+    margin-top: 35px;
+  }
+
+  .person-name {
+    font-size: 16px;
+    margin: 51px auto 18px;
+  }
+
+  .testimonials-range {
+    margin-top: -8px;
+  }
+
+  .pay-and-feed-button {
+    margin-top: 19px;
+    padding-bottom: 50px;
+  }
+
+  .map .section-header {
+    padding-top: 50px;
+    margin-bottom: -54px;
+  }
+
+  .map-area {
+    margin-top: -91px;
+    margin-bottom: -39px;
+}
+
+  /* .map-area {
+    z-index: -5;
+  } */
+
+  .map-image {
+    width: 100%;
+    height: 390px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .map .wrapper-medium {
+    max-width: 300px;
+  }
+
+  .watch-online-button-wrapper {
+    margin-top: -91px;
+    padding-bottom: 49px;
+}
+
+  .animal-pin {
+    transform: scale(0.5);
+    z-index: 1;
+  }
+
+  .eagle-pin {
+    top: 24%;
+    left: 3%;
+  }
+
+  .alligator-pin {
+    top: 27%;
+    left: 12.5%;
+    z-index: 0;
+  }
+
+  .gorilla-pin {
+    left: 39.1%;
+    top: 34%;
+    z-index: 0;
+  }
+
+  .gorilla-photo {
+    z-index: 1;
+  }
+
+  .gorilla-popup {
+    left: -197px;
+  }
+
+  .panda-pin {
+    top: 25%;
+    left: 66%;
+    z-index: 0;
+  }
+
+  .animal-description {
+    pointer-events: none;
+    z-index: 5;
+    max-width: 285px;
+  }
+
+  .popup {
+    height: 11.3rem !important;
+    padding: 1.6rem 1.5rem 0;
+  }
+
+  .popup .simple-text {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .popup .description-title {
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
+
+  .animal-photo {
+    transform: scale(1.3);
+  }
+
+  .popup {
+    align-items: start;
+    border-radius: 20px;
+  }
+
+  .eagle-popup {
+    top: -56px;
+    left: 7px;
+  }
+
+  .alligator-popup {
+    top: -70px;
+    left: -50px;
+  }
+
+  .gorilla-popup {
+    left: -214px;
+    top: -128px;
+  }
+
+  .panda-popup {
+    top: -70px;
+    left: -373px;
+  }
+
+  .footer-wrapper {
+    margin: 0 auto;
+    padding: 0.1rem 0.67rem;
+  }
+
+  .footer-menu-wrapper {
+    margin-top: 55px;
+  }
+
+  .footer-logo {
+    margin-bottom: 7px;
+  }
+
+  .footer-menu li {
+    margin-top: 6px;
+  }
+
+  .contact-us {
+    margin-top: -40px;
+  }
+
+  fieldset {
+    width: 91%;
+    margin-left: -2px;
+  }
+
+  .contact-us-checkbox {
+    margin-top: 15px;
+    margin-left: -6px;
+  }
+
+  .contact-us-send {
+    width: 103%;
+  }
+
+  .contact-inf {
+    margin-top: 31px;
+  }
+
+  .footer-button.mobile {
+    display: block;
+    margin: 30px auto 78px auto;
+  }
+
+  .how-it-works-slider-img {
+    display: none;
+  }
+
+  .how-it-works-slider-item1 {
+    background: url(../online-zoo/assets/images/deer-full.jpg);
+    background-size: 437px 325px;
+    width: 100%;
+    height: 324px;
+    border-radius: 5px;
+    margin-bottom: 28px;
+  }
+}
