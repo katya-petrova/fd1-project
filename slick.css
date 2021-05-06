@@ -43,13 +43,13 @@
 
 /* Стрелка влево */
 .slick-arrow.slick-prev{
-    background: url(/assets/icons/arrow.svg) no-repeat;
+    background: url(./assets/icons/arrow.svg) no-repeat;
     width: 37px;
     height: 37px;
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
-        background: url(/assets/icons/arrow.svg) no-repeat;
+        background: url(./assets/icons/arrow.svg) no-repeat;
         width: 37px;
         height: 37px;
         margin-bottom: 20px;
