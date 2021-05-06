@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+    <title>Online zoo</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/slick.css"/>
     <link rel="icon" href="./assets/icons/favicon.ico" /> 
     <link rel="stylesheet" type="text/css" href="./pages/normalize.css">
     <link rel="stylesheet" href="style.css">
@@ -15,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="script.js" defer=""></script>
-    <title>Online zoo</title>
+    
 </head>
 
 <body>
@@ -698,11 +700,6 @@
         <section class="testimonials light-theme">
             <h2 class="section-header">Testimonials</h2>
             <div class="feedback-slider-wrapper">
-                <div class="feedback-slider-item">
-                    <svg class="arrow left-arrow">
-                        <use xlink:href="./assets/icons/arrow.svg#arrow" />
-                    </svg>
-                </div>
                 <div class="feedback-slider-item feedback feedback1">
                     <div class="feedback-content">
                         <img src="./assets/images/natasha.png" alt="avatar">
@@ -719,15 +716,26 @@
                             of the 2020 Australian bushfires on precious species and their habitat.</p>
                     </div>
                 </div>
-                <div class="feedback-slider-item">
-                    <svg class="arrow right-arrow">
-                        <use xlink:href="./assets/icons/arrow.svg#arrow" />
-                    </svg>
+                <div class="feedback-slider-item feedback feedback2">
+                    <div class="feedback-content">
+                        <img src="./assets/images/vlad.png" alt="avatar">
+                        <p class="person-name">Nikita Shvets</p>
+                        <p class="simple-text ">As a voice for wildlife, we are devastated by the impact
+                            of the 2020 Australian bushfires on precious species and their habitat.</p>
+                    </div>
+                </div>
+                <div class="feedback-slider-item feedback feedback2">
+                    <div class="feedback-content">
+                        <img src="./assets/images/natasha.png" alt="avatar">
+                        <p class="person-name">Ann Lipova</p>
+                        <p class="simple-text ">As a voice for wildlife, we are devastated by the impact
+                            of the 2020 Australian bushfires on precious species and their habitat.</p>
+                    </div>
                 </div>
             </div>
             <div class="rangecontainer testimonials-range">
-                <p class="range-light">0<span class="demo"></span>/<span class="total-number">08</span></p>
-                <input type="range" min="1" max="8" value="2" class="range range-black" id="myRange">
+                <p class="range-light">0<span class="demo"></span>/<span class="total-number">04</span></p>
+                <input type="range" min="1" max="4" value="1" class="range range-black" id="myRange">
             </div>
             <div class="pay-and-feed-button">
                 <button class="watch-online-button"><span class="feedback-button">Leave feedback</span></button>
@@ -896,7 +904,9 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/slick.js"></script>
+    <script src="/slick.min.js"></script>
 </body>
 
 </html>

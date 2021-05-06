@@ -267,9 +267,9 @@ body {
     max-width: 536px;
   }
 
-  .feedback1 {
+  /* .feedback1 {
     display: none;
-  }
+  } */
 }
 
 @media all and (max-width: 860px) {
@@ -1087,13 +1087,13 @@ body {
     padding-bottom: 50px;
   }
 
-  .feedback1 {
+  /* .feedback1 {
     display: block;
   }
 
   .feedback2 {
     display: none;
-  }
+  } */
 
   .feedback-slider-wrapper {
     margin-top: 35px;

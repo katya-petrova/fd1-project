@@ -39,3 +39,31 @@ darkModeToggle.addEventListener("click", () => {
     disableDarkMode();
   }
 });
+
+//carousel
+
+// let count = 0;
+// let position = 0;
+// const line = document.querySelector(".carousel-line");
+// const items = document.querySelectorAll(".animal");
+// //const itemWidth = items[0].getBoundingClientRect();
+// console.log(itemWidth)
+// const leftArrow = document.querySelector(".left-arrow");
+// const rightArrow = document.querySelector(".right-arrow");
+// const wrapper = document.querySelector(".carousel-wrapper");
+// const itemsCount = items.length;
+
+//video slider 
+
+const mainVideo = document.querySelector('.video-1');
+const smallVideos = document.querySelectorAll('.small-video');
+
+smallVideos.forEach((video) => {
+video.addEventListener('click', changeSrc)
+})
+
+function changeSrc(video) {
+  const mainSrc = mainVideo.firstElementChild.src;
+  mainVideo.firstElementChild.src = video.target.firstElementChild.src;
+  video.target.firstElementChild.src = mainSrc;
+}

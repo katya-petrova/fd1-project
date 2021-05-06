@@ -68,25 +68,23 @@ darkModeToggle.addEventListener("click", () => {
 
 //carousel
 
-//let slidesToShow = 11;
 let count = 0;
 let position = 0;
 const line = document.querySelector(".carousel-line");
 const items = document.querySelectorAll(".animal");
-//const  crslElemFirst = document.querySelector('.pets-in-zoo-animal');
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 const range = document.querySelector(".carousel-range input");
 let output = document.querySelector(".carousel-range .demo");
 const wrapper = document.querySelector(".carousel-wrapper");
 const itemsCount = items.length;
-//const itemWidth = line.clientWidth / slidesToShow;
+let link = document.querySelector('.button-link');
 const pins = document.querySelectorAll(".animal-pin");
-
+console.log(link)
 line.children[0].classList.add("active");
 
 function checkSize() {
-  if (window.innerWidth < 1300) {
+  if (window.innerWidth < 1200) {
     rollSlider();
   }
 }
@@ -98,25 +96,31 @@ window.addEventListener("resize", checkSize);
 function activatePin() {
   if (line.children[0].classList.contains("active")) {
     pins[2].classList.add("active-pin");
+    link.setAttribute("href", "../zoos/gorilla/gorilla.html");
   } else {
     pins[2].classList.remove("active-pin");
   }
   if (line.children[1].classList.contains("active")) {
     pins[3].classList.add("active-pin");
+    link.setAttribute("href", "../zoos/panda/panda.html");
   } else {
     pins[3].classList.remove("active-pin");
   }
   if (line.children[2].classList.contains("active")) {
     pins[1].classList.add("active-pin");
+    link.setAttribute("href", "../zoos/alligator/alligator.html");
   } else {
     pins[1].classList.remove("active-pin");
   }
   if (line.children[3].classList.contains("active")) {
     pins[0].classList.add("active-pin");
+    link.setAttribute("href", "../zoos/eagle/eagle.html");
   } else {
     pins[0].classList.remove("active-pin");
   }
 }
+
+activatePin()
 
 function inputScroll() {
   if (+range.value === 1) {
@@ -233,9 +237,78 @@ function rollSlider() {
   }
 }
 
-// pins[0].addEventListener("click", () => {
-//   line.children[3].classList.add("active");
-//   pins[0].classList.add("active-pin");
-//   range.value = 3;
-//   output.innerHTML = 4;
-// });
+const elements = Array.from(line.children);
+
+function carouselClick(item) {
+for (let i = 0; i < elements.length; i++) {
+  if (elements[i].classList.contains('active') && (elements[i] !== item.target.offsetParent)) {
+    elements[i].classList.remove('active')
+  }
+}
+item.target.offsetParent.classList.add('active');
+range.value = elements.indexOf(item.target.offsetParent) + 1;
+output.innerHTML = range.value;
+count = elements.indexOf(item.target.offsetParent);
+activatePin()
+console.log(elements.indexOf(item.target.offsetParent));
+}
+
+elements.forEach((item) => {
+  item.addEventListener('click', carouselClick)
+})
+
+const pinArray = Array.from(pins);
+
+function pinClick(pin) {
+  if (pinArray.indexOf(pin.target.offsetParent) === 0) {
+    elements[3].classList.add("active");
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('active') && (elements[i] !== elements[3])) {
+        elements[i].classList.remove('active')
+      }
+      range.value = 4;
+      output.innerHTML = range.value;
+      count = range.value - 1;
+    }
+  }
+  if (pinArray.indexOf(pin.target.offsetParent) === 1) {
+    elements[2].classList.add("active");
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('active') && (elements[i] !== elements[2])) {
+        elements[i].classList.remove('active')
+      }
+      range.value = 3;
+      output.innerHTML = range.value;
+      count = range.value - 1;
+    }
+  }
+  if (pinArray.indexOf(pin.target.offsetParent) === 2) {
+    elements[0].classList.add("active");
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('active') && (elements[i] !== elements[0])) {
+        elements[i].classList.remove('active')
+      }
+      range.value = 1;
+      output.innerHTML = range.value;
+      count = range.value - 1;
+    }
+  }
+  if (pinArray.indexOf(pin.target.offsetParent) === 3) {
+    elements[1].classList.add("active");
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('active') && (elements[i] !== elements[1])) {
+        elements[i].classList.remove('active')
+      }
+      range.value = 2;
+      output.innerHTML = range.value;
+      count = range.value - 1;
+    }
+  }
+  activatePin()
+}
+
+pins.forEach((pin) => {
+  pin.addEventListener('click', pinClick)
+})
+
+

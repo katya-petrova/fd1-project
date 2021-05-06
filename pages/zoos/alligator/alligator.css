@@ -205,85 +205,129 @@ body {
   margin-top: 5px;
 }
 
-.sidebar-item {
-  position: relative;
-  transition: 0.3s;
-  transition-property: transform;
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  overflow: hidden;
+  height: 167px;
+  max-width: 1181px;
+  margin: auto;
 }
 
-.sidebar-item {
-  margin-bottom: 10px;
-  cursor: pointer;
+.carousel-wrapper {
+  overflow: hidden;
+}
+
+.carousel-line {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 145px;
+  transition: all 0.4s ease;
 }
 
 .animal {
+  cursor: pointer;
+}
+
+.arrow {
+  width: 19px;
+  height: 30px;
+  cursor: pointer;
+  fill: #828282;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  fill: #333333;
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+}
+
+.animal {
+  position: relative;
+  height: 108px;
+  width: 108px;
   border-radius: 50%;
-  border: 7px solid var( --light-grey);
+  z-index: 5;
+  transition: 0.3s;
+  margin: 15px auto;
+  user-select: none;
+}
+
+.panda img{
   width: 108px;
   height: 108px;
-  transition: 0.3s;
+  
 }
 
 .animal::before {
   content: "";
   position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 100%;
-  height: 100%;
+  top: -6%;
+  left: -6%;
+  right: -6%;
+  bottom: -6%;
+  background: linear-gradient( 
+96deg
+, rgba(7, 238, 224, 1) 0%, rgba(223, 73, 109, 1) 92% );
+  height: 112%;
+  width: 112%;
   z-index: -1;
-  border-radius: 50%;
-  padding: 3px;
-  background-image: linear-gradient(106.89deg, #07eee0 0%, #df496d 100%);
+  border-radius: 100%;
   opacity: 0;
-  transition: 0.2s;
+  visibility: hidden;
+  transition: 0.5s;
 }
 
-.animal:hover::before {
+.animal::after {
+  content: "";
+  position: absolute;
+  top: -3%;
+  left: -3%;
+  right: -3%;
+  bottom: -3%;
+  background-color:  var(--light-grey);
+  height: 106%;
+  width: 106%;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.animal:hover:before {
+  visibility: visible;
   opacity: 1;
 }
 
-.panda {
-  background: url(../../../assets/images/panda-big.jpg) right;
-  background-size: cover;
-}
-
-.eagle {
-  background: url(../../../assets/images/eagle-big.jpg) right;
-  background-size: cover;
-}
-
-.alligator {
-  background: url(../../../assets/images/alligator-big.jpg) right top;
-  background-size: cover;
-  width: 140px;
-  height: 140px;
-}
-
-.gorilla {
-  background: url(../../../assets/images/gorilla-big.jpg);
-  background-size: cover;
+.animal:hover:after {
+  visibility: visible;
+  opacity: 1;
 }
 
 .animal:hover {
-  height: 140px;
-  width: 140px;
+  transform: scale(1.17);
 }
 
-.alligator::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transform: scale(1);
-  border-radius: 50%;
-  padding: 3px;
-  background-image: linear-gradient(106.89deg, #07eee0 0%, #df496d 100%);
+.active {
+  transform: scale(1.17);
+}
+
+.active.animal::before {
+  visibility: visible;
   opacity: 1;
-  transition: 0.2s;
+}
+
+.active.animal::after {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* the-zoo styles */
@@ -338,34 +382,8 @@ body {
   position: relative;
 }
 
-.video-2::after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  width: 246px;
-  height: 140px;
-  z-index: 1;
-}
-
-.video-3 {
-  grid-area: video-3;
-  position: relative;
-}
-
-.video-3::after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  width: 246px;
-  height: 140px;
-  z-index: 1;
-}
-
-.video-4 {
-  grid-area: video-4;
-  position: relative;
-}
-
+.video-2::after,
+.video-3::after,
 .video-4::after {
   content: " ";
   position: absolute;
@@ -373,6 +391,17 @@ body {
   width: 246px;
   height: 140px;
   z-index: 1;
+  cursor: pointer;
+}
+
+.video-3 {
+  grid-area: video-3;
+  position: relative;
+}
+
+.video-4 {
+  grid-area: video-4;
+  position: relative;
 }
 
 .description {
@@ -751,6 +780,17 @@ address a {
     height: 110px;
   }
 
+  .video-2::after,
+  .video-3::after,
+  .video-4::after {
+    width: 190px;
+    height: 110px;
+  }
+
+  .rounds {
+    margin-left: 78px;
+}
+
   .the-zoo {
     grid-template-columns: 207px 207px 222px 276px;
     grid-template-rows: 140px 119px 203px 163px 20px;
@@ -765,15 +805,14 @@ address a {
     height: 720px;
   }
 
-  .animal {
-    width: 100px;
-    height: 100px;
+   .animal{
+    transform: scale(0.85);
+    margin: auto;
   }
 
   .animal:hover {
-    height: 100px;
-    width: 100px;
-  }
+    transform: scale(0.9);
+  } 
 
   .sidebar {
     margin: 63px 0px 40px -28px;
@@ -828,7 +867,7 @@ address a {
   .video-2::after,
   .video-3::after,
   .video-4::after {
-    width: 164px;
+    width: 150px;
     height: 94px;
   }
 }
@@ -852,36 +891,40 @@ address a {
 }
 
 @media all and (max-width: 720px) {
-  .animal {
-    width: 70px;
-    height: 70px;
+   .animal {
+    transform: scale(0.7);
   }
 
   .animal:hover {
-    height: 70px;
-    width: 70px;
-  }
+    transform: scale(0.8);
+  } 
 
   .sidebar {
     margin: 63px 0px 40px 3px;
-    height: 450px;
+    height: 510px;
+    width: 110px;
   }
+
+  .main {
+    height: 1040px;
+}
 
   .the-zoo {
-    grid-template-columns: 172px 170px 155px;
-    grid-template-rows: 138px 57px 205px 148px 0px;
-  }
+    grid-template-columns: 167px 167px 155px;
+    grid-template-rows: 200px 48px 205px 148px 0px;
+    padding: 0 0.4rem 0 0.6rem;
+}
 
   .video-1 iframe {
-    width: 497px;
-    height: 280px;
+    width: 480px;
+    height: 269px;
   }
 
   .video-2 iframe,
   .video-3 iframe,
   .video-4 iframe {
-    width: 155px;
-    height: 89px;
+    width: 149px;
+    height: 84px;
   }
 
   .footer-wrapper {
@@ -905,9 +948,10 @@ address a {
   }
 
   .the-zoo {
-    grid-template-columns: 171px 174px 156px;
+    grid-template-columns: 166px 166px 156px;
     grid-template-rows: 111px 57px 205px 148px 0px;
-  }
+    padding: 0.4rem;
+}
 
   .rounds {
     margin-top: -46px;
@@ -954,7 +998,7 @@ address a {
       ". rounds "
       "description description ";
       margin-right: 40px;
-    margin-left: 40px;
+    margin-left: 30px;
   }
 
   .video-1 iframe {
@@ -988,6 +1032,23 @@ address a {
 }
 
 @media all and (max-width: 510px) {
+
+  .sidebar {
+    margin: 63px 0px 40px -5px;
+}
+
+  .carousel-wrapper {
+    height: 289px;
+}
+
+  .animal {
+    transform: scale(0.6);
+    margin: -18px auto;
+  }
+
+  .animal:hover {
+    transform: scale(0.6);
+  } 
 
   .the-zoo {
     grid-template-columns: 158px 137px;
@@ -1076,11 +1137,16 @@ address a {
 
   .sidebar {
     height: 301px;
+    width: 92px;
 }
 
-.panda.animal {
+/* .panda.animal {
   width: 52px;
   height: 52px;
+} */
+
+.sidebar-item {
+  height: 25px;
 }
 
   .up-arrow {
@@ -1091,16 +1157,19 @@ address a {
   transform: rotate(-90deg) scale(0.5);
 }
 
-  .animal {
-    width: 40px;
-    height: 40px;
+   .animal {
+    transform: scale(0.5);
+    margin: -25px auto;
     border: 3px solid var( --light-grey);
   }
 
   .animal:hover {
-    height: 40px;
-    width: 40px;
-  }
+    transform: scale(0.5);
+  } 
+
+  .the-zoo {
+    margin: 0;
+}
 
   .footer-wrapper {
     padding: 0.1rem 0.5rem;
@@ -1110,9 +1179,8 @@ address a {
 
 @media all and (max-width: 325px) {
 
-  .the-zoo {
-    margin-right: 8px;
-    margin-left: 8px;
+  .sidebar {
+    width: 83px;
 }
 
 }
@@ -1130,7 +1198,7 @@ address a {
 
   .the-zoo {
     grid-template-columns: 104px 97px;
-    grid-template-rows: 80px 1px 88px 86px 0px;
+    grid-template-rows: 104px 1px 88px 86px 0px;
 }
 
 .rounds {
