@@ -752,6 +752,10 @@ address a {
   margin-top: -6px;
 }
 
+.footer-button.mobile {
+  display: none;
+}
+
 .copyright {
   border-top: 0.5px solid #fefefe;
   opacity: 0.6;
