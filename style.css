@@ -2113,7 +2113,13 @@ address a {
 }
 
 .panda-popup {
-  left: -301px;
+  left: -282px;
+  top: 14px;
+}
+
+.eagle-popup {
+  top: 18px;
+  left: 27px;
 }
 
   .donate-button {
@@ -2201,10 +2207,6 @@ address a {
   footer {
     height: 1103px;
   }
-
-  /* .contact-us {
-    max-width: 300px;
-  } */
 
   .feedback-content {
     max-width: 272px;
